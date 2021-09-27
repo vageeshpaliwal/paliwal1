@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 90vh;
+    width:100%;
+     background-image: url(eduford_img/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav{
+    display:flex;
+    padding:1.5% 6%;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#3498DB;
+    height:70px;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+    margin-top: 5px;
+}
+.nav-links ul li{
+    list-style: :none;
+    display:inline;
+    padding:8px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li:hover{
+    background-color:red;
+    height:2px;
+    border-radius: 5px;
+    width:2px;
+    
+}
+.text-box{
+    width:100%;
+    color:#fff;
+    height:500px;
+    
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size:65px;
+}
+.text-box p{
+    margin:10px 0 40px;
+}
+.hero-btn
+{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #fff;
+    padding:12px 34px;
+    font-size:13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+    
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:#f44336;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display:block;
+        color:black;
+        margin:10px;
+        font-size: 30px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*what we provide css section*/
+.whatwe{
+    width:100%;
+    height:500px;
+    margin:auto;
+    margin-top:70px;
+    text-align: center;
+    padding-top:50px;
+  background-image:url("eduford_img/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg");
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+offer h2{
+    font-size: 36px;
+   
+}
+.offer{
+    width:80%;
+    margin:auto;
+    margin-top: 100px;
+/*    background-color:antiquewhite;*/
+    height:200px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.offer h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.offer p{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 22px;
+    padding-top:10px;
+    text-align: center;
+}
+@media(max-width:700px){
+    .offer p{
+        font-size:10px;
+            font-weight:300;
+        
+    }
+}
+.social{
+    margin-top:50px;
+}
+.social ul{
+    list-style-type:none;
+    padding:2%;
+}
+.social ul li{
+    display:inline;
+    padding:1%;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background-color: #3498DB;
+    
+}
+.f1{
+    width:50%;
+    float:left;
+}
+.f1 p{
+    padding-top: 40px;
+    text-align: center;
+}
+.f2 a{
+    color:#fff;
+}
+.f2{
+    width:50%;
+    float:right;
+    
+}
+.f2 p {
+  
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

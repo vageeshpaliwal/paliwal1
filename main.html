@@ -1,0 +1,293 @@
+<html>
+<head>
+    <title>
+    main page
+    </title>
+     <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+        
+.header1
+ {
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.370rem 0.100rem;
+  font-size: .50rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+     
+        
+
+.search-bar{
+     width:100%;
+    height:100px;
+    background-color: transparent;
+}
+.search-bar input[type="search"]{
+    width:50%;
+    margin-left:20%;
+    margin-top: 30px;
+    height:30px;
+    font-size:1rem;
+    border:1px solid black;
+    padding-left:20px;
+    border-radius:100px;
+}
+        .main{
+            background:  #5DADE2;
+            height:80px;
+            width:100%;
+        }
+        .uni1{
+            width:30%;
+          
+            height:50px;
+            margin-left: 34px;
+            padding-top:25px;
+            
+            float: left;
+            text-align: center;
+           
+        }
+      
+        
+        .href{
+            text-decoration: none;
+            color:#fff;
+            
+            border:1px solid #fff;
+            padding:2px 100px;
+            font-size:18px;
+        }
+        .href:hover{
+          
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 16px 90px;
+            transition: 0.2s;
+            color: black;
+        }
+        
+        .col-sm-3{
+            position: relative;
+            height: 300px;
+            margin-left: 70px;
+            
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            
+        }
+        .img1{
+            display:flex;
+            padding-top:1px;
+            width:100%;
+            height:100%;
+            text-align: center;
+        }
+       
+        .image_overlay{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            color:#ffff;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition:opacity:0.25s;
+            
+        }
+        .image_overlay:hover{
+            opacity:1;
+        }
+        .image_overlay > *{
+            transform: translateY(40px);
+            transition: transform 0.20s;
+        }
+        .image_overlay:hover > *{
+            transform: translateY(0);
+             
+        }
+        .image_title{
+            font-size:4em;
+            font-weight: bold;
+             font-family: 'Poppins', sans-serif;
+         
+        }
+        .image_title a{
+            text-decoration: none;
+            color: #ffff;
+        }
+        
+       
+        .unibystate{
+            position: relative;
+             background-color: #5DADE2;
+            width:100%;
+            height: 100px;
+        }
+        .unistate{
+            width:40%;
+           
+            height:50px;
+            position:absolute;
+            margin:30px 20px 0px 29%;
+            text-align:center;
+            vertical-align: center;
+            padding-top:13px;
+            color:#fff;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            font-size:20px;
+            font-weight: bold;
+           
+        }
+        .unistate a{
+            border:1px solid #ffff;
+         color:#fff;
+          text-decoration: none;
+        display:inline;
+            padding:8px;
+        }
+        .unistate a:hover{
+            color:#fff;
+        }
+        
+      .footer{
+    width:100%;
+    height:100px;
+    background-color: #3498DB;
+    
+}
+.f1{
+    width:50%;
+    float:left;
+}
+.f1 p{
+    padding-top: 40px;
+    text-align: center;
+}
+.f2 a{
+    color:#fff;
+}
+.f2{
+    width:50%;
+    float:right;
+    
+}
+.f2 p {
+  
+    padding-top: 40px;
+    text-align: center;
+}
+       
+        
+    </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+    
+    <body>
+        
+        <section class="header1">
+            <nav>
+                <img src="eduford_img/logo.png">
+                <div class="nav-links">
+                  <i class="fa fa-times"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="main.html">Universities</a></li>
+                        <li><a href="contact.html">contact</a></li>                
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!--------- seacrh section-->
+        <div class="search-bar">
+          <form action="search.php" method="post">
+            <input type="search" name="State" placeholder="Search State">
+            <input type="submit" name="submit"  class="btn btn-primary"> 
+        </form>
+        </div>
+        <div class="main">
+            <div class="uni1" >
+                <a href="private%20university.php" class="href">Private Universities</a>
+            </div>
+            <div class="uni1" >
+                  <a href="centraluniversity.php"class="href" >Central Universities</a>
+            </div>
+            <div class="uni1" >
+                  <a href="stateuniversity.php" class="href">State Universities</a>
+            </div>
+        </div>
+       
+            <div class="contains" style=" witdh:100%;height:400px;">
+         <div class="row" style="width:100%; height:370px; margin-top:50px;">
+            <div class="col-sm-3" style="margin-top: 25px;width: 27%;">
+                
+                    <img src="eduford_img/nit).jfif" class="img1" >
+                    <div class="image_overlay">
+                        <div class="image_title"><a href="NIT.PHP" >NIT</a>
+                        </div>
+                        
+                    </div>                  
+             </div>
+             <div class="col-sm-3" style="margin-top: 25px;width: 27%;">
+                 <img src="eduford_img/images.jfif" class="img1" >
+                    <div class="image_overlay">
+                        <div class="image_title"><a href="IIT.php" >IIT</a>
+                        </div>
+                        
+                    </div>     
+             
+             </div>
+            <div class="col-sm-3" style="margin-top: 25px;width: 27%;">
+              <img src="eduford_img/london.png" class="img1" >
+                    <div class="image_overlay">
+                        <div class="image_title"><a href="IIM.php">IIM</a></div>
+                        
+                    </div>     
+             </div>
+         </div>
+        </div>
+       
+       <section class="footer">
+            <div class="f1">
+                <p> Copyright @2020 www.eduford.com, India</p>
+            
+            
+            </div>
+            <div class="f2">
+                <p><a href="about.html">About Us</a> |
+                    <a href="#">Privacy Policy</a>|
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+         </section>
+   
+         <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    
+</html>

@@ -1,175 +1,125 @@
-<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<style>
-*{
-	margin:0;
-	padding:0;
-}
-header{
-	width:100%;
-	height:100vh;
-	background-image:linear-gradient(to left, #fff 80%,#c3f5ff 20%);
-	
-}
-.nav{
-	width:100%;
-	align-items: center;
-	height:20vh;
-	display:flex;
-	justify-content:space-around;
-	background-color:#3E3E3E;
-	align-items:center;
-	background-image:linear-gradient(to top, #fff 80%,#c3f5ff 20%);
-}
-.logo{
-	width:30%;
-	height:80px;
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+   
+    <title>EDUford</title>
+     <link rel="stylesheet" href="style.css">
 
-
-}
-.img{
-	width:30%;
-	height:70px;
-	border-radius:4000px 400px 4000px 400px;
-}
-nav{
-	width:60%;
-	display:flex;
-	justify-content:space-around;
-}
-nav a{
-	text-decoration:none;
-	text-transform: uppercase;
-	color:#000;
-	font-weight:900;
-	front-size:17px;
-	position:relative;
-	
-}
-nav a:before{
-	content: "";
-	position:absolute;
-	top:110%;
-	left:0;
-	width:0%;
-	height:2px;
-	border-bottom: 2px solid #4458dc;
-	transition:all 0.4s linear;
-}
-nav a:hover:before{
-	width:100%;
-}
-main{
-	height:80vh;
- 	display:flex;
-	justify-content:space-around;
-	align-items: center;
-}
-.rightside{
-	border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
-	background-color:#e8fbff;
-	height: 200px;
-	
-}
-.rightside img{
-	max-width: 500px;
-	height:auto;
-}
-.leftside:{
-	color:#000;
-	text-transform:uppercase;
-	
-}
-.leftside h3{
-	font-size: 40px;
-	matgin-bottom:20px;
-	position:relative;
-}
-.leftside h3:after{
-	content: "";
-	width:450px;
-	height:3px;
-	position:absolute;
-	top:43%;
-	left:27.2%;
-	background: #000;
-	
-}
-.leftside h1{
-	maqrgin-top:20px;
-	font-size:70px;
-	margin-bottom:25px;
-}
-.leftside h2{
-	margin-bottom:35px;
-	font-weight:100;
-	word-spacing:4px;
-	
-}
-.leftside .btn1{
-	text-decoration:none;
-	font-weight:900;
-	font-size:14px;
-	text-align:center;
-	padding:12px 25px;
-	cursor: pointer;
-	text-transform: uppercase;
-	border-radius: 5px;
-	margin-right: 50px;
-	color:#fff;
-	letter-spacing: 0;
-	background-image:linear-gradient(to right,#4458dc 0%,#854fee 100%);
-	border:double 2px transparent;
-	box-shadow:0 10px 30px rgba(118,85,225,.3);
-}
-.leftside .btn2{
-	text-decoration:none;
-	font-weight:900;
-	font-size:14px;
-	text-align:center;
-	padding:12px 25px;
-	cursor: pointer;
-	text-transform: uppercase;
-	border-radius: 5px;
-	margin-right: 50px;
-	color:#222;
-	letter-spacing: 0;
-	background-image:linear-gradient(to right,#4458dc 0%,#854fee 100%);
-	border:double 2px transparent;
-	box-shadow:0 10px 30px rgba(118,85,225,.3);
-}
-
-	
-	</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
-
-<body>
-	<header>
-		<section class="nav">
-			<div class="logo">
-				<img class="img" src="images/c4.png">
-			</div>
-			<nav>
-					<a href="index.html">Home</a>
-					<a href="#">About</a>
-					<a href="index1.html">Gallery</a>
-					<a href="regis.html">LogIn</a>
-					<a href="#">SignUp</a>
-					<a href="website.html">Contact</a>
-			</nav>
-		</section>
-		<main>
-			<div class="leftside"><h3>Hello</h3>
-				<h1>Static website</h1>
-				<a href="#" class="btn1">Hire Me</a>
-				<a href="#"class="btn2">Contact Me</a>
-			</div>
-			<div class="rightside">
-			<img src="images/c2.jfif"></div>
-		</main>
-	</header>
-</body>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html" ><img src="eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="main.html">Universities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    
+                    
+                    </ul>
+                </div>
+                 <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+       
+              
+    <div class="text-box" style="margin-top: 150px;"> 
+            <h1> Universities</h1>
+              
+               <a href="main.html"class="hero-btn">Visit Our sites  to know more</a>
+        
+    </div>
+             </section>
+        <!--------what we provide---->
+        <section class="whatwe"> 
+            
+          
+            <div class="offer"> 
+                 <h2>What we Provide</h2><hr>
+                <p> We Provides The Universities List in India And also Provide The list of indian Institute of technology and National institute of Technology and Indian Institute of Management </p> </div>
+        </section>
+         <!-------social---->
+        
+         <section class="social">
+        <div class="container text-center">
+            <h2> Connect with us</h2><hr>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com"><img src="https://img.icons8.com/cute-clipart/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/login?lang=en"><img src="https://img.icons8.com/plasticine/48/000000/twitter--v2.png"/></a>
+                </li>
+            </ul>
+           </div>
+    </section>
+        <!-----footer-------->
+        <section class="footer">
+            <div class="f1">
+                <p> Copyright @2020 www.eduford.com, India</p>
+            
+            
+            </div>
+            <div class="f2">
+                <p><a href="about.html">About US</a> |
+                    <a href="">Privacy Policy</a>|
+                    <a href="#">Contact</a>
+                </p>
+            
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        
+        </section>
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--------javascript code--->
+     
+         <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        
+        
+        <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+        
+        
+        
+        </script>
+    </body>
 </html>
